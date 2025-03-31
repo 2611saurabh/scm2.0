@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{:: #content},~{::title},~{::script})}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Services Page</title>
+</head> 
 <body>
-    <h1>This services Page</h1>
-    <hr>
+    <section id="content">
+        <h1>Welcome to service Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, blanditiis!   </p>
+    </section>
 
-    <!-- using frag -->
-
-    <div class="host-tag" th:replace="~{base :: parent(~{::#main_content})}">
-        <section id="main_content">
-            <h1>This is dynamic servecise paseed to base parent</h1>
-        </section>
-    </div>
-
+    <script>
+        console.log("Services Page");
+    </script>
 </body>
 </html>
