@@ -31,7 +31,7 @@ public class PageController {
         return "home"; 
     }
 
-    //about  rout
+    //about  route
 
     @RequestMapping("/about")
     public String aboutPage(Model model){
@@ -50,6 +50,7 @@ public class PageController {
         
         return "services";
     }
+    @RequestMapping("/about")
 
     @GetMapping("/login")
     public String loginPage() {
